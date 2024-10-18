@@ -8,7 +8,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
 # Load the dataset (replace 'bank_marketing.csv' with the actual file path)
-data = pd.read_csv('D:/DWM/bank_marketing.csv')
+data = pd.read_csv('D:\DWM/bank_marketing.csv')
 
 # a. Explore data and visualize each attribute
 # Display basic statistics and info about the dataset
@@ -18,7 +18,7 @@ print(data.describe())
 print("\nInfo about the dataset:")
 print(data.info())
 # Visualize the target variable distribution
-sns.countplot(x='y', data=data)
+sns.countplot(x='duration', data=data)
 plt.xlabel('Subscribed to Term Deposit (1/0)')
 plt.ylabel('Count')
 plt.title('Distribution of Subscribed to Term Deposit')
